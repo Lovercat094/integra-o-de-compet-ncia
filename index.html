@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Gato mia</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img class="img-nav" src="./img/img nav.png" alt="">
+      <p> Gato mia</p>
+    </nav>
+  </header>
+
+  <section>
+    <div class="gato-mia-introducao">
+
+      <H2 style="padding-left: 15px;">Seja bem vindo ao Gato mia, um site dedicado exclusavamente a GATOS</H2>
+      <P>o conversor de idade felina em humana foi feito para você descobrir a idade do seu gato equivalente a de
+        um ser humano, já que o desenvolvimento felino é bem mais acelerado que o nosso. </P>
+      <p>Além disso, estão reunidas 8 raças de gatos com as particularidades mais interessantes, sendo estas as
+        mais populares entre os admiradores felinos</p>
+    </div>
+
+    <div class="container-form">
+      <div class="formulario">
+        <h4>Conversor de idade felina para humana</h4>
+        <label for="gato">Idade do felino</label>
+        <input type="number" id="idadeGato">
+      </div>
+
+      <div class="aside-resultado">
+        <h4>Idade humana equivalente</h4>
+        <span>3 anos</span>
+      </div>
+
+    </div>
+
+    <div class="card-russian-blue">
+      <img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/russian-blue-cat-700x700.jpg" alt="">
+      <h2>Russian blue</h2>
+      <p>O nome da raça provem do tom prateado de seus pelos, que possuem um aspecto azulado. os gatos dessa
+        espécies são conhecidos por seu comportamento elegante e pacifico</p>
+
+      <div class="chart-russian">
+        <canvas id="chartRussian"></canvas>
+
+        <script>
+          const ctx = document.getElementById('chartRussian');
+
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['Energia', 'Inteligencia', 'Afabilidade', 'apego ao dono'],
+              datasets: [{
+                label: '# of Votes',
+                data: [7, 9, 8, 8],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+      </div>
+    </div>
+
+    <div class="card-maine-coon">
+      <img src="https://blog.agrosolo.com.br/wp-content/uploads/2017/08/maine-coon2.png" alt="">
+      <h2>Maine coon</h2>
+      <p>uma das raças mais populares. Sua fama se deve ao seu tamaho avantajado e pelagem longa, podendo chegar
+        até um metro de comprimento e pesar ate oito quilos. São conhecidos também por sua personalidade docil
+      </p>
+
+      <div class="chart-maine-coon">
+        <canvas id="chartMaine"></canvas>
+
+        <script>
+          const ctx = document.getElementById('chartMaine');
+
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['Energia', 'Inteligencia', 'Afabilidade', 'apego ao dono'],
+              datasets: [{
+                label: '# of Votes',
+                data: [5, 10, 8, 9],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+      </div>
+
+    </div>
+
+    <div class="card-bengal">
+      <img src="https://premierpet.com.br/wp-content/uploads/2021/07/bengal-grande.jpg" alt="">
+      <h2>Bengal</h2>
+      <p>A aparencia unica do bengal ou gato-de-bengala se deve a sua genetica. A raca foi originada atravez de
+          crusamentos entre gatos selvagens e domesticos</p>
+    
+          <div class="chart-bengal">
+            <canvas id="chartBengal"></canvas>
+    
+            <script>
+              const ctx = document.getElementById('chartBengal');
+    
+              new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['Energia', 'Inteligencia', 'Afabilidade', 'apego ao dono'],
+                  datasets: [{
+                    label: '# of Votes',
+                    data: [9, 8, 7, 9],
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+            </script>
+    </div>
+
+    <div class="card-angora">
+      <img src="https://cats-ptmagazine.com/wp-content/uploads/2019/03/Angora_Turco.jpg" alt="">
+      <h2>Angorá</h2>
+      <p>Gatos elegantes e ativos. o adjetivo que melhor os descreve é "encantadores"</p>
+
+      <div class="chart-angora">
+        <canvas id="chartAngora"></canvas>
+
+        <script>
+          const ctx = document.getElementById('chartAngora');
+
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['Energia', 'Inteligencia', 'Afabilidade', 'apego ao dono'],
+              datasets: [{
+                label: '# of Votes',
+                data: [10, 8, 10, 7],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+    </div>
+
+    <div class="persa">
+      <img src="https://doglife.sydle.one/api/1/blog/_classId/5d66ed07e7c98a556a499a36/_download/61e18969edf3b92597aacd26/61e188b0edf3b92597a73735?accessToken=eyJhbGciOiJIUzUxMiJ9.eyJjb2RlIjoiNWU5NzY2Y2M0MThhMmI3MTc1NGQ4M2U5IiwibG9naW4iOiJibG9nLmRvZ2xpZmUiLCJuYW1lIjoiQmxvZyBEb2dMaWZlIiwiX29yZ0lkIjoiNWQ2YmJhM2IzZTM4ZTg3NjgzNGY5Y2NmIiwiX2NsYXNzIjp7ImNsYXNzUGFja2FnZUlkZW50aWZpZXIiOiJfc3lzdGVtIiwiX2lkIjoiMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyIiwiX2NsYXNzSWQiOiIwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJjbGFzc0lkZW50aWZpZXIiOiJfY2xhc3MifSwiX2NyZWF0aW9uRGF0ZSI6IjIwMjAtMDUtMjBUMjA6NDg6MzIuNzMxWiIsIl9sYXN0VXBkYXRlRGF0ZSI6IjIwMjAtMTEtMDZUMTQ6MDQ6MTguMTAxWiIsIl9sYXN0VXBkYXRlVXNlciI6eyJjbGFzc1BhY2thZ2VJZGVudGlmaWVyIjoiX3N5c3RlbSIsIl9pZCI6IjVlYzU2ZTVkMTkwZGFkMTQ2NmMwNzZhZSIsIl9jbGFzc0lkIjoiMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAyIiwiY2xhc3NJZGVudGlmaWVyIjoiX3VzZXIifSwiX2NsYXNzUmV2aXNpb24iOiJlY2YyYmFmNWM5YjQ5NWM5ZDZkYjE0ZmFjZWRjMjAxMCIsIl9yZXZpc2lvbiI6IjVmYTU1N2UyMDAxMmYyMGU1ZGIyZTQ3YyIsImFjdGl2ZSI6dHJ1ZSwib3JnYW5pemF0aW9uSWQiOiJkb2dsaWZlIiwiYXV0aGVudGljYXRpb25DbGFzcyI6Il9zeXN0ZW0uX3VzZXIiLCJ0b2tlblZlcnNpb24iOjE2LCJpc0FwcER5bmFtaWNBdXRoVG9rZW4iOmZhbHNlLCJpYXQiOjE2MTU4MTUzMDIsImlzcyI6Imp3Iiwic3ViIjoiYWNjZXNzVG9rZW4ifQ.94GMea_byYtt2quY3O9rCcK8bjymzaLjT2VQzWQkP-5nYtbp_34tcSEXN1xt1SG1ZnXgeo0RDL-iROTcIoH2wg" alt="">
+      <h2>Persa</h2>
+      <p>A raça de gato mais conhecida e tradicional. são gatos majestosos e pacificos, de natureza calma e
+          independente</p>
+
+          <div class="chart-persa">
+            <canvas id="chartPersa"></canvas>
+    
+            <script>
+              const ctx = document.getElementById('chartPersa');
+    
+              new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: ['Energia', 'Inteligencia', 'Afabilidade', 'apego ao dono'],
+                  datasets: [{
+                    label: '# of Votes',
+                    data: [4, 7, 6, 7],
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+            </script>
+    </div>
+
+    <div class="bombay">
+<img src="https://t4.ftcdn.net/jpg/06/61/30/17/360_F_661301778_srDVIFyWLARTSBKEvcDU44OQ7927alQU.jpg" alt="">
+<h2>Bombay</h2>
+            <p>Sua aparencia lembra propositalmente a de uma pantera negra em tamanho reduzido. São extremamente
+                carinhosos e doceis</p>
+
+
+      <div class="chart-bombay">
+        <canvas id="chartBombay"></canvas>
+
+        <script>
+          const ctx = document.getElementById('chartBombay');
+
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['Energia', 'Inteligencia', 'Afabilidade', 'apego ao dono'],
+              datasets: [{
+                label: '# of Votes',
+                data: [7, 6, 10, 9],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+    </div>
+
+    <div class="munchkin">
+<img src="https://bowwowinsurance.com.au/wp-content/uploads/2018/10/munchkin-cat-700x700-1.jpg" alt="">
+<h2>Munchkin</h2>
+<p>A principal característica da raça são suas patas curtas e tamanho reduzido, que dão a eles um aspecto
+    adoravel</p>
+
+      <div class="chart-munckin">
+        <canvas id="chartMunckhin"></canvas>
+
+        <script>
+          const ctx = document.getElementById('chartMunckhin');
+
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['Energia', 'Inteligencia', 'Afabilidade', 'apego ao dono'],
+              datasets: [{
+                label: '# of Votes',
+                data: [7, 8, 10, 9],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+    </div>
+
+    <div class="savannah">
+      <img src="https://basepaws.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F7hqiona4456t%2F1j606mYiYue25JSJ0LUw7V%2F6a492a7063a035ce4556681699d1199e%2Fsavannah_cat.jpg&w=1080&q=75" alt="">
+      <h2>Savannah</h2>
+      <p>Uma raça que se encontra no limiar entre selvageme domestico. Tambem sao uma raca de gatos hibridos, onde as
+          caracteristicas de seus ancestrais selvagens se fazem muito presentes em sua aparencia</p>
+
+      <div class="chart-savannah">
+        <canvas id="chartSavannah"></canvas>
+
+        <script>
+          const ctx = document.getElementById('chartSavannah');
+
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['Energia', 'Inteligencia', 'Afabilidade', 'apego ao dono'],
+              datasets: [{
+                label: '# of Votes',
+                data: [10, 10, 6, 7],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+    </div>
+  </section>
+
+  <footer></footer>
+  <script src='./js/main.js'></script>
+</body>
+
+</html>

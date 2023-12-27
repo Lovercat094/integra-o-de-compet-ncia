@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    gap: 2rem;
+    background-color: aliceblue;
+};
+section{
+    justify-content: center;
+    align-items: center;
+}
+.img-nav{
+    margin: 6px 2px 0px 2px;
+    width: 42px;
+    height: 35px;
+
+};
+.gato-mia-introducao{
+    width: 60rem;
+    background: antiquewhite; 
+    padding: 3px 5px 4px 20px; 
+    justify-content: center;
+
+
+};
+.container-form{
+border: 1px solid black
+};
+.card-russian-blue{
+    display: flex;
+}
