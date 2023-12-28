@@ -3,27 +3,41 @@ nav{
     gap: 2rem;
     background-color: aliceblue;
 };
-section{
+
+.introducao{
     justify-content: center;
-    align-items: center;
+    background-color: antiquewhite;
+    border: 1px solid;
 }
-.img-nav{
-    margin: 6px 2px 0px 2px;
-    width: 42px;
-    height: 35px;
 
-};
-.gato-mia-introducao{
-    width: 60rem;
-    background: antiquewhite; 
-    padding: 3px 5px 4px 20px; 
-    justify-content: center;
-
-
-};
-.container-form{
-border: 1px solid black
-};
-.card-russian-blue{
+.chart {
+    width: 26%;
     display: flex;
 }
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.card{
+    display: flex;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-section{
+    width: 50%; 
+    border-right: 1px solid lightgray;
+}
+
+.card-aside{
+    width: 50%;
+}
+
+.card-img{
+    width: 300px;
+}
+
